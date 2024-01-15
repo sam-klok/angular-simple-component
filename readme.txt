@@ -12,7 +12,7 @@ Steps:
 >code .
 >ng g c simple-form-comp
 
-1.2 Let's copy component SimpleFormComp
+1.2 Let's create component with text input and form for validation
 https://angular.io/api/forms/NgForm
 Note: if you get error
 Add import to modules FormsModule
