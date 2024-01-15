@@ -1,6 +1,7 @@
 <p>simple-form-comp works!</p>
-<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-    <input name="first" ngModel required #first="ngModel">
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <input name="first" ngModel required minlength="4" appForbiddenName="bob" #first="ngModel">
+
     <input name="last" ngModel>
     <button>Submit</button>
 </form>
@@ -9,3 +10,9 @@
 <p>First name valid: {{ first.valid }}</p>
 <p>Form value: {{ f.value | json }}</p>
 <p>Form valid: {{ f.valid }}</p>
+
+<div *ngIf="first.invalid && (first.dirty || first.touched)" class="alert">
+    <div *ngIf="first.errors?.['required']">First name is required.</div>
+    <div *ngIf="first.errors?.['minlength']">First name must be at least 4 characters long.</div>
+    <div *ngIf="first.errors?.['forbiddenName']">First name cannot be Bob.</div>
+</div>

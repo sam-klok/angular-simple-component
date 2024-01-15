@@ -10,7 +10,7 @@ Steps:
 >ng new angular-simple-component
 >cd C:\Repos\angular-simple-component
 >code .
->ng g c calcSum
+>ng g c simple-form-comp
 
 1.2 Let's copy component SimpleFormComp
 https://angular.io/api/forms/NgForm
@@ -26,4 +26,8 @@ see screen 01
 
 3. Let's add input in the component.
 Based on: https://angular.io/tutorial/first-app/first-app-lesson-05
+
+4. Validation
+https://angular.io/guide/form-validation
+
 

@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CalcSumComponent } from './calc-sum/calc-sum.component';
 import { SimpleFormCompComponent } from './simple-form-comp/simple-form-comp.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalcSumComponent,
     SimpleFormCompComponent
   ],
   imports: [
