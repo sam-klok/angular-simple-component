@@ -1,4 +1,6 @@
 It's a primitive project with simple componet for input validation.
+https://github.com/sam-klok/angular-simple-component
+
 Let's add two numbers:
 https://en.wikipedia.org/wiki/Summation
 
